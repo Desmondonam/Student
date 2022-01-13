@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Academic AutoAdvisor
+	</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<form id="courseform" style="padding-bottom: 30px;">
+
+<div style="width: 50%; margin-left: auto;margin-right: auto;display: block; background-color: lightgrey;padding-bottom: 30px;">
+	<h1 >Academic Auto Advisor</h1>
+<label>select dms file *</label>
+	<input type="file" name="file" id="myfile" class="form-control"><br>
+	<br>
+	
+	<div style="width: 100%;">
+<div style="width: 50%;">
+			<label>Start Year</label>
+		<select id="years" onchange="onyearchanged(this)" class="form-control" style="width: 40%;">Start Year</select>
+</div>
+<div style="width: 50%; ">
+			<label>Start Term</label>
+		<select id="terms" class="form-control" onchange="selectfall(this)" style="width: 40%;">
+			<option value="spring">Spring</option>
+			<option value="falll">Fall</option>
+
+		</select>
+</div>
+	</div>
+
+
+	<div style="width: 100%;">
+<div style="width: 100%;">
+			<label>Program Courses</label>
+		<select id="courses" onchange="oncourseselected(this)" class="form-control" style="width: 40%;"></select>
+</div>
+
+	</div>
+
+	<div style="width: 100%;">
+<div style="width: 50%;">
+			<label>Start Course</label>
+		<select id="yearsmod" class="form-control" style="width: 40%;">Start Year</select>
+</div>
+<div style="width: 50%; ">
+			<label>Spring Semester</label>
+		<select  id="terms1" class="form-control" onchange="onselectterm2(this)"  style="width: 40%;">
+			
+
+		</select>
+</div>
+
+<div style="width: 50%; ">
+			<label>Fall</label>
+		<select  id="terms2" class="form-control" style="width: 40%;">
+		
+
+		</select>
+</div>
+
+	</div>
+
+	<div  style=" padding: 20px; font-size: 20px;font-weight: bold;">
+		Your Current Gpa : <span id="gpa"> 0</span>
+	</div>
+</div>
+<form>
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>
+
